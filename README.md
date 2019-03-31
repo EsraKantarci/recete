@@ -24,3 +24,9 @@ SURDUR (x ESIT 3) ISE
       a ESITTIR 2.
 
 As one can see, { equals "ISE" and } equals "." in our language. 
+
+Unfortunately, since there is no yacc file, we cannot initialize the lexical analyis as a file. However, you can view them in recete.l file. 
+
+If there is anything you want to contribute or comment, please help us to improve our code. Your feedbacks are important.
+Thank you,
+Esra Kantarcı & Alperen Keser
