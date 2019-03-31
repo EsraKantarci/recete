@@ -27,6 +27,8 @@ As one can see, { equals "ISE" and } equals "." in our language.
 
 Unfortunately, since there is no yacc file, we cannot initialize the lexical analyis as a file. However, you can view them in recete.l file. 
 
+As an extra to the homework requirements, we added math operators, functions, methods (as "FORMUL") and classes (as "TANIM"). If it is a complex structure, we may postpone their implementation in our next project and focus on the initial requirements. 
+
 If there is anything you want to contribute or comment, please help us to improve our code. Your feedbacks are important.
 Thank you,
 Esra Kantarcı & Alperen Keser
