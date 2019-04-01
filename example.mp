@@ -1,0 +1,20 @@
+SAYI x ESITTIR 2, Y;
+OKUT("%SAYI",Y);
+
+EGER(x ESIT 2 ve y KUCUKESIT 10)ISE
+x ESITTIR x KALAN y;
+x ESITTIR x BOLU Y;
+x ESITTIR x CARPI y;
+x ARTI ARTI;
+.
+YADA(x KUCUKTUR 0 VEYA y BUYUKTUR 0)YAZDIR(x);
+YOKSA y BOLU 2;
+
+DIPNOT single line comment
+DIP multiple
+line
+comment NOT
+
+SURDUR(x BUYUKTUR 2)ISE
+x EKSI EKSI;
+.

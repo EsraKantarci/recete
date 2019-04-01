@@ -521,7 +521,6 @@ int yy_flex_debug = 0;
 char *yytext;
 #line 1 "recete.l"
 #line 2 "recete.l"
-  #include "y.tab.c"
   #include <stdio.h>
   #include <stdlib.h>
   #include <assert.h>
@@ -532,7 +531,7 @@ char *yytext;
   FILE* result;
   extern FILE* yyin;
   extern int errno;
-#line 536 "lex.yy.c"
+#line 535 "lex.yy.c"
 /* Booleans with truth levels, kesin:100, dogru:75, olabilir:50, yanlis:25, imkansiz:0 */
 /* brackets for parameters	*/
 /* "ise" is for { and "." is for }	*/
@@ -545,7 +544,7 @@ char *yytext;
 /* Operators */
 /* Functions and classes, TANIM equals class, FORMUL equals functions */
 /* Variables and constants	*/
-#line 549 "lex.yy.c"
+#line 548 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -762,10 +761,10 @@ YY_DECL
 		}
 
 	{
-#line 77 "recete.l"
+#line 76 "recete.l"
 
 
-#line 769 "lex.yy.c"
+#line 768 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -824,196 +823,196 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 79 "recete.l"
+#line 78 "recete.l"
 printf("DOGRULUK IBARESI ");
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 80 "recete.l"
+#line 79 "recete.l"
 printf("SOZCUK ");
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 81 "recete.l"
+#line 80 "recete.l"
 printf("SAYI ");
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 82 "recete.l"
+#line 81 "recete.l"
 printf("DEGISKEN ");
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 83 "recete.l"
+#line 82 "recete.l"
 printf("AC PARANTEZ ");
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 84 "recete.l"
+#line 83 "recete.l"
 printf("KAPA PARANTEZ ");
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 85 "recete.l"
+#line 84 "recete.l"
 printf("ISE ");
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 86 "recete.l"
+#line 85 "recete.l"
 printf(". ");
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 87 "recete.l"
+#line 86 "recete.l"
 printf("EGER ");
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 88 "recete.l"
+#line 87 "recete.l"
 printf("YA DA ");
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 89 "recete.l"
+#line 88 "recete.l"
 printf("YOKSA ");
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 90 "recete.l"
+#line 89 "recete.l"
 printf("YORUM: ");
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 91 "recete.l"
+#line 90 "recete.l"
 printf("YORUM BASI ");
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 92 "recete.l"
+#line 91 "recete.l"
 printf("YORUM SONU	");
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 93 "recete.l"
+#line 92 "recete.l"
 printf("ESITTIR	");
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 94 "recete.l"
+#line 93 "recete.l"
 printf("VEYA ");
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 95 "recete.l"
+#line 94 "recete.l"
 printf("DEGIL ");
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 96 "recete.l"
+#line 95 "recete.l"
 printf("DEMEK ");
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 97 "recete.l"
+#line 96 "recete.l"
 printf("ANCAKVEANCAK ");
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 98 "recete.l"
+#line 97 "recete.l"
 printf("VE ");
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 99 "recete.l"
+#line 98 "recete.l"
 printf("KUCUKESIT	");
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 100 "recete.l"
+#line 99 "recete.l"
 printf("KUCUKTUR	");
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 101 "recete.l"
+#line 100 "recete.l"
 printf("BUYUKESIT	");
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 102 "recete.l"
+#line 101 "recete.l"
 printf("BUYUKTUR	");
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 103 "recete.l"
+#line 102 "recete.l"
 printf("ESIT ");
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 104 "recete.l"
+#line 103 "recete.l"
 printf("ŞUNU YAZDIR: ");
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 105 "recete.l"
+#line 104 "recete.l"
 printf("ŞUNU OKU: ");
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 106 "recete.l"
+#line 105 "recete.l"
 printf("SURDUR: ");
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 107 "recete.l"
+#line 106 "recete.l"
 printf("ARTI ");
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 108 "recete.l"
+#line 107 "recete.l"
 printf("EKSI ");
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 109 "recete.l"
+#line 108 "recete.l"
 printf("BOLU ");
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 110 "recete.l"
+#line 109 "recete.l"
 printf("CARPI ");
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 111 "recete.l"
+#line 110 "recete.l"
 printf("KALAN ");
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 112 "recete.l"
+#line 111 "recete.l"
 printf("FORMULU ");
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 113 "recete.l"
+#line 112 "recete.l"
 printf("TANIMI ");
 	YY_BREAK
 case 36:
 /* rule 36 can match eol */
 YY_RULE_SETUP
-#line 114 "recete.l"
-;
+#line 113 "recete.l"
+printf("\n");
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 115 "recete.l"
-printf("ANLAŞILMAYAN KARAKTER ";
+#line 114 "recete.l"
+printf("ANLAŞILMAYAN KARAKTER ");
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 116 "recete.l"
+#line 115 "recete.l"
 ECHO;
 	YY_BREAK
-#line 1017 "lex.yy.c"
+#line 1016 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2018,7 +2017,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 116 "recete.l"
+#line 115 "recete.l"
 
 
 int yywrap(void)
@@ -2040,9 +2039,9 @@ int yywrap(void)
 *	else y/2;			YOKSA y BOLU 2;
 *	
 *	//single line comment		DIPNOT single line comment
-*	/* multiple 			DIP multiple
+*	multiple 			DIP multiple 
 *	line				line
-*	commnet */			comment NOT
+*	commnet 			comment NOT
 *	
 *	while(x>2){			SURDUR(x BUYUKTUR 2)ISE
 *	x--;				x EKSI EKSI;

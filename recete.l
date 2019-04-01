@@ -1,5 +1,4 @@
 %{
-  #include "y.tab.c"
   #include <stdio.h>
   #include <stdlib.h>
   #include <assert.h>
@@ -111,8 +110,8 @@ CARPI								printf("CARPI ");
 KALAN								printf("KALAN ");
 FORMUL								printf("FORMULU ");
 TANIM								printf("TANIMI ");
-[ \t\n]  							;
-.								printf("ANLAŞILMAYAN KARAKTER ";
+[ \t\n]  							printf("\n");
+.								printf("ANLAŞILMAYAN KARAKTER ");
 %%
 
 int yywrap(void)
@@ -134,9 +133,9 @@ int yywrap(void)
 *	else y/2;			YOKSA y BOLU 2;
 *	
 *	//single line comment		DIPNOT single line comment
-*	/* multiple 			DIP multiple
+*	multiple 			DIP multiple 
 *	line				line
-*	commnet */			comment NOT
+*	commnet 			comment NOT
 *	
 *	while(x>2){			SURDUR(x BUYUKTUR 2)ISE
 *	x--;				x EKSI EKSI;
