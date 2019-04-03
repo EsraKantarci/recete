@@ -12,7 +12,7 @@
 %}
 
 /* Booleans with truth levels, kesin:100, dogru:75, olabilir:50, yanlis:25, imkansiz:0 */
-DOGRULUK		(KESIN|DOGRU|OLABILIR|YANLIS|IMKANSIZ)
+DOGRULUK		("KESIN"|"DOGRU"|"OLABILIR"|"YANLIS"|"IMKANSIZ")
 
 /* brackets for parameters	*/
 AC_PARANTEZ		(\()
@@ -81,8 +81,8 @@ SAYI								printf("SAYI ");
 DEGISKEN							printf("DEGISKEN ");
 (\()								printf("AC PARANTEZ ");
 (\))								printf("KAPA PARANTEZ ");
-ISE								printf("ISE ");
-NOKTA								printf(". ");
+ISE								printf("ISE \n");
+NOKTA								printf(". \n");
 EGER								printf("EGER ");
 YADA								printf("YA DA ");
 YOKSA								printf("YOKSA ");
@@ -110,8 +110,9 @@ CARPI								printf("CARPI ");
 KALAN								printf("KALAN ");
 FORMUL								printf("FORMULU ");
 TANIM								printf("TANIMI ");
-[ \t\n]  							printf("\n");
-.								printf("ANLAŞILMAYAN KARAKTER ");
+[ \t\n]  							;
+";"								printf("SON \n");
+.								printf("ANLASILMAYAN KARAKTER ");
 %%
 
 int yywrap(void)
