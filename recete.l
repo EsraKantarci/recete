@@ -12,7 +12,7 @@
 %}
 
 /* Booleans with truth levels, kesin:100, dogru:75, olabilir:50, yanlis:25, imkansiz:0 */
-DOGRULUK		("KESIN"|"DOGRU"|"OLABILIR"|"YANLIS"|"IMKANSIZ")
+DOGRULUK		("KESIN"|"DOGRU"|"BELIRSIZ"|"YANLIS"|"IMKANSIZ")
 
 /* brackets for parameters	*/
 AC_PARANTEZ		(\()
@@ -79,36 +79,36 @@ DEGISKEN		[a-zA-Z][a-zA-Z]*[0-9]*
 SOZCUK								printf("SOZCUK ");
 SAYI								printf("SAYI ");
 DEGISKEN							printf("DEGISKEN ");
-{AC_PARANTEZ}								printf("AC PARANTEZ ");
-{KAPA_PARANTEZ}								printf("KAPA PARANTEZ ");
-{ISE}							printf("ISE \n");
+{AC_PARANTEZ}							printf("AC PARANTEZ ");
+{KAPA_PARANTEZ}							printf("KAPA PARANTEZ ");
+{ISE}								printf("ISE \n");
 {NOKTA}								printf(". \n");
 {EGER}								printf("EGER ");
 {YADA}								printf("YA DA ");
 {YOKSA}								printf("YOKSA ");
-{DIPNOT}								printf("YORUM: ");
+{DIPNOT}							printf("YORUM: ");
 {DIP}								printf("YORUM BASI ");
 {NOT}								printf("YORUM SONU	");
-{ESITTIR}								printf("ESITTIR	");
+{ESITTIR}							printf("ESITTIR	");
 {VEYA}								printf("VEYA ");
 {DEGIL}								printf("DEGIL ");
 {DEMEK}								printf("DEMEK ");
 {ANCAKVEANCAK}							printf("ANCAKVEANCAK ");
 {VE}								printf("VE ");
 {KUCUKESIT}							printf("KUCUKESIT	");
-{KUCUKTUR}								printf("KUCUKTUR	");
+{KUCUKTUR}							printf("KUCUKTUR	");
 {BUYUKESIT}							printf("BUYUKESIT	");
-{BUYUKTUR}								printf("BUYUKTUR	");
+{BUYUKTUR}							printf("BUYUKTUR	");
 {ESIT}								printf("ESIT ");
-{YAZDIR}								printf("ŞUNU YAZDIR: ");
+{YAZDIR}							printf("ŞUNU YAZDIR: ");
 {OKUT}								printf("ŞUNU OKU: ");
-{SURDUR}								printf("SURDUR: ");
+{SURDUR}							printf("SURDUR: ");
 {ARTI}								printf("ARTI ");
 {EKSI}								printf("EKSI ");
 {BOLU}								printf("BOLU ");
 {CARPI}								printf("CARPI ");
 {KALAN}								printf("KALAN ");
-{FORMUL}								printf("FORMULU ");
+{FORMUL}							printf("FORMULU ");
 {TANIM}								printf("TANIMI ");
 [ \t\n]  							;
 ";"								printf("SON \n");
@@ -119,27 +119,3 @@ int yywrap(void)
 {
 	return 1;
 }
-
-/*
-*	int x=2,y;		==>	SAYI x ESITTIR 2, y;	
-*	scanf("%d",y)			OKUT("%SAYI",y);
-*
-*	if(x==2 && y<=10){		EGER(x ESIT 2 VE y KUCUKESIT 10)ISE 
-*	x = x%y;			x ESITTIR x KALAN y;
-*	x = x/y;			x ESITTIR x BOLU y;
-*	x = x*y;			x ESITTIR x CARPI y;
-*	x++;				x ARTI ARTI ;
-*	}				.
-*	else if(x<0||y>0)printf(x);	YADA(x KUCUKTUR 0 VEYA y BUYUKTUR 0)YAZDIR(x);
-*	else y/2;			YOKSA y BOLU 2;
-*	
-*	//single line comment		DIPNOT single line comment
-*	multiple 			DIP multiple 
-*	line				line
-*	commnet 			comment NOT
-*	
-*	while(x>2){			SURDUR(x BUYUKTUR 2)ISE
-*	x--;				x EKSI EKSI;
-*	}				.
-*
-*/
